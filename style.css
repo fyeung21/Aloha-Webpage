@@ -1,4 +1,4 @@
-/* General */
+/* General Typography*/
 
 html, body {
     color: #2d2d2d;
@@ -13,7 +13,7 @@ html, body {
 h1, h2 {
     color:#2d2d2d;
     font-family: 'Playfair Display', Arial, serif;
-    font-size:40px;
+    font-size:36px;
     font-weight: normal;
     font-style: normal;
     line-height:1.5rem;
@@ -31,22 +31,19 @@ ul {
 /* General Containers */
 
 section, header, footer {
-    background-color:gray;
+    /* background-color:gray; */
 }
 
 .container {
     text-align:center;
     margin:0 auto;
     display: block;
-    padding: 100px 0;
 }
 
 .container_small {
-    max-width:950px;
+    max-width:750px;
     text-align:center;
-    margin:0 auto;
-    margin-top:10px;
-    margin-bottom:10px;
+    margin:40px auto;
     display: block;
 }
 
@@ -61,20 +58,46 @@ section, header, footer {
     display: flex;
     justify-content:space-between;
     flex-direction:row;
-    position: center;
-    width:75%;
-    /* position:fixed;*/
+    width:83%;
+    /* position:fixed; */
+}
+
+.logo {
+    align-self:flex-start;
+    width: 160px;
+    margin:15px 0px;
 }
 
 /* Navigation */
 
-/* Main Logo & Cart */
-
-.logo {
-    position:left;
-    left:auto;
-    align-self:flex-start;
+nav li{
+    color:#b64036;
+    display: inline-block;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: normal;
+    font-size:16px;
+    font-style: normal;
+    text-align: center;
+    margin:40px 15px 20px;
+    
 }
+
+/* Navigation Link Behaviour */
+
+a:link {
+    color:#e2574c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #e2574c;
+}
+
+a:hover {
+    color: #b64036;
+}
+
+/* Cart */
 
 .container_cart {
     max-width:1240px;
@@ -86,7 +109,8 @@ section, header, footer {
 
 .cart {
     align-self:flex-end;
-    padding-top:60px;
+    width: 60px;
+    margin:17px 20px 0px 40px;
 }
 
 .number {
@@ -100,40 +124,13 @@ section, header, footer {
     top:0px;
     padding-top:40px;
 
-    width:40px;
+    /* width:40px;
     height:40px;
     border-radius: 50%;
-    background-color:#b64036;
+    background-color:#b64036; */
 }
 
-nav li{
-    color:#b64036;
-    display: inline-block;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-weight: normal;
-    font-size:20px;
-    font-style: normal;
-    text-align: center;
-    position: bottom;
-    padding-top:100px;
-    
-    
-}
 
-/* Navigation Link Behaviour */
-
-a:link {
-    color:#b64036;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #b64036;
-}
-
-a:hover {
-    color: #b64036;
-}
 
 
 /* --------------------------------------------------------------
@@ -143,13 +140,11 @@ a:hover {
 .banner {
     background-image: url(images/banner-girl.png), url(images/flower-bkgd.jpg);
     background-position:bottom;
-    padding:250px;
-    padding-bottom: 250px;
+    padding:200px;
     background-repeat:no-repeat, repeat;
     margin:0;
-    background-size:300px, 1240px;
+    background-size:280px, contain;
     position:relative;
-    
 }
 
 /* Typography for Banner */
@@ -157,15 +152,18 @@ a:hover {
 .bannertext {
     color:white;
     font-family:"Raleway", Arial, sans-serif;
-    font-size:30px;
+    font-size:20px;
     text-align:center;
-    padding-top:150px;
+    margin:0 auto;
+    text-shadow: 1px 1px 2px gray;
 }
 
 .bannertext2 {
     color:white;
-    font-size:76px;
+    font-size:60px;
     text-align:center;
+    margin:0 auto;
+    text-shadow: 1px 1px 2px gray;
     
 }
 
@@ -174,9 +172,10 @@ a:hover {
 -------------------------------------------------------------------*/
 
 .about_aloha {
-
     text-align: center;
-    font-size: 20px;
+    font-size:18px;
+    font-weight:100;
+    line-height:30px;
 }
 
 .shopinfo h2{
@@ -207,8 +206,8 @@ a:hover {
     font-size:40px;
     margin: 6px;
     width:400px;
-    height:500px;
-    padding-top:240px;
+    height:400px;
+    padding-top:200px;
 }
 
 
@@ -254,7 +253,7 @@ a:hover {
 }
 
 .categories a:visited {
-    color: beige;
+    color: white;
 }
 
 .categories a:hover {
@@ -264,6 +263,15 @@ a:hover {
 /*--------------------------------------------------------------------
                          Featured (Scrolling)
 ---------------------------------------------------------------------*/
+.container-featured {
+    width:80%;
+    text-align:center;
+    margin:40px auto;
+    display: block;
+}
+.scroll-products {
+    background-color:gray;
+}
 
 /* Typography for Featured */
 
@@ -277,12 +285,24 @@ a:hover {
 
 .featured-text-genre.featured-text-price {
     color:#969696;
-    font-size:16px;
+    font-size:10px;
+    font-family:"Raleway", Arial, sans-serif;
+    font-weight:100;
 }
 
 .featured-text-name {
-    color:#b64036;
-    font-size:16px;
+    color:#e2574c;
+    font-size:20px;
+    font-family:"Playfair Display", Arial, serif;
+}
+
+.main-carousel {
+    display:flex;
+    align-content: center;
+    flex-direction: row;
+}
+.carousel-cell {
+    align-items: row;
 }
 
 
@@ -296,28 +316,51 @@ a:hover {
     background-repeat: no-repeat;
     background-size:cover;
     margin:0 0 1rem auto;
-    padding: 150px;
+    padding: 3px;
 }
 
 .signup-text {
     color:white;
-    font-size: 30px;
+    font-size: 18px;
+    font-weight:100;
+    line-height:35px;
 }
 
 .subscribe h2{
     font-style:italic;
-    font-size:50px;
+    font-size:40px;
 }
 
 .subscribe span{
     font-style:normal;
-    font-size:50px;
+    font-size:40px;
 }
 
 /*Button*/
 
 .button {
-    color: #e2574c;
+    background-color: #e2574c;
+    color:white;
+    padding:10px 20px;
+    font-family:'Raleway';
+    font-size:18px;
+    border-radius:25px;
+    width:18%;
+}
+
+.button:hover {
+    background-color:#b64036;
+}
+
+.input {
+    font-size:16px;
+    width:20%;
+    padding: 15px 10px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#email {
+    padding:25px;
 }
 
 /*------------------------------------------------------------------------
@@ -333,20 +376,19 @@ a:hover {
 }
 
 .footer-text-container {
-    font-family:'Playfair-Display';
+    font-family:"Playfair Display", Arial, serif;
     display: flex;
     flex-direction:row;
     align-content: center;
     justify-content: space-between;
     margin:0 auto;
-    width: 80%;
+    width: 85%;
 }
 
 .leftside-footer-copyright {
     color: white;
     text-align: left;
-    padding-left: 20px;
-    padding-top:20px;
+    padding-top:80px;
     align-self:flex-start;  
 }
 
@@ -354,7 +396,7 @@ a:hover {
     color: white;
     text-align: left;
     align-self:flex-start;  
-    padding:10px;
+    padding:10px 0px;
     margin:0 0; 
 }
 
@@ -362,12 +404,17 @@ a:hover {
     color:white;
     font-family:"Raleway", Arial, sans-serif;
     font-size: 100%;
+    font-weight:100;
+    line-height:2rem;
     align-self:flex-end;
     list-style-position: inside;
-    padding:20px 20px;
-    padding-bottom:40px;
 }
 
+.icon {
+    padding:0px 10px;
+    text-align: right;
+    min-width:20px;
+}
 
 .address {
     color:#969696;
@@ -385,7 +432,7 @@ a:hover {
 }
 
 .social-media a:hover {
-    color: white;
+    color: #e2574c;
 }
 
 .leftside-footer-contact a:link {
@@ -397,7 +444,7 @@ a:hover {
 }
 
 .leftside-footer-contact a:hover {
-    color: white;
+    color: #e2574c;
 }
 
 /* ----------------------------------------------------------------------

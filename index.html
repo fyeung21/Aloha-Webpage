@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,10 +21,10 @@
         <img class="logo" src="images/aloha-logo.svg" alt="logo">
         <nav>
             <ul id="navigation">
-                <li><a href="about.html">ABOUT </a></li>
-                <li><a href="shop.html">SHOP </a></li>
-                <li><a href="featured.html">FEATURED </a></li>
-                <li><a href="updates.html">UPDATES </a></li>
+                <li id="about"><a href="about.html">ABOUT </a></li>
+                <li id="shop"><a href="shop.html">SHOP </a></li>
+                <li id="featured"><a href="featured.html">FEATURED </a></li>
+                <li id="updates"><a href="updates.html">UPDATES </a></li>
             </ul>
         </nav>
 
@@ -42,7 +43,7 @@
     </section>
 
     <!--About: centered text-->
-    <section class="shopinfo container_small">
+    <section id="about" class="shopinfo container_small">
         <h2>Hand-Crafted <span>Styles</span></h2>
         <p class=about_aloha>Aloha Apparel Co. sells only the finest ready to travel clothing. Browse our current
             selection of products
@@ -51,7 +52,7 @@
 
 
     <!--Categories-->
-    <section class="container">
+    <section id="shop" class="container">
         <ul class="categories_container">
             <li class="categories mens"><a href="#mens">MEN'S</a></li>
             <li class="categories trends"><a href="#trends">TRENDS</a></li>
@@ -64,24 +65,69 @@
     </section>
 
     <!--Featured: scrolling products-->
-    <section class="scroll-products container_small">
+    <section id="featured" class="scroll-products container-featured">
         <h2>Most-Loved <span>Products</span></h2><br />
-        <img id="checked-stretch-dress" src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
-        <img id="blue-hipster-backpack" src="images/blue-hipster-backpack.jpg" alt="blue-hipster-packpack">
-        <p class="featured-text-genre">Dresses</p><br />
-        <p class="featured-text-name">Checked Stretch Dress</p><br />
-        <p class="feature-text-price">$129.00</p>
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <img id="stretch-knit-dress" src="images/stretch-knit-dress.jpg" alt="checked-stretch-dress">
+                <p class="featured-text-genre">DRESSES</p>
+                <p class="featured-text-name">Stretch Knit Dress</p>
+                <p class="feature-text-price">$169.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img id="cotton-blue-shirt" src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt">
+                <p class="featured-text-genre">SHIRTS</p>
+                <p class="featured-text-name">Cotton Blue Shirt</p>
+                <p class="feature-text-price">$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img id="checked-stretch-dress" src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
+                <p class="featured-text-genre">DRESSES</p>
+                <p class="featured-text-name">Checked Stretch Dress</p>
+                <p class="feature-text-price">$129.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img id="blue-hipster-backpack" src="images/blue-hipster-backpack.jpg" alt="blue-hipster-packpack">
+                <p class="featured-text-genre">BAGS</p>
+                <p class="featured-text-name">Blue Hipster Backpack</p>
+                <p class="feature-text-price">$69.00</p>
+            </div>
+            <div class="carousel-cell">
+                    <img id="checked-stretch-dress" src="images/demin-overall-shorts.jpg" alt="checked-stretch-dress">
+                    <p class="featured-text-genre">DENIM</p>
+                    <p class="featured-text-name">Denim Overall Shorts</p>
+                    <p class="feature-text-price">$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                    <img id="checked-stretch-dress" src="images/pink-dotted-dress.jpg" alt="checked-stretch-dress">
+                    <p class="featured-text-genre">DRESSES</p>
+                    <p class="featured-text-name">Pink Dotted Dress</p>
+                    <p class="feature-text-price">$99.00</p>
+            </div>
+            <div class="carousel-cell">
+                    <img id="checked-stretch-dress" src="images/blue-silk-dress.jpg" alt="checked-stretch-dress">
+                    <p class="featured-text-genre">DRESSES</p>
+                    <p class="featured-text-name">Blue Silk Dress</p>
+                    <p class="feature-text-price">$199.00</p>
+            </div>
+            <div class="carousel-cell">
+                    <img id="checked-stretch-dress" src="images/cotton-yellow-tshirt.jpg" alt="checked-stretch-dress">
+                    <p class="featured-text-genre">SHIRTS</p>
+                    <p class="featured-text-name">Cotton Yellow Tshirt</p>
+                    <p class="feature-text-price">$39.00</p>
+            </div>
+        </div>
     </section>
 
     <!--Signup Banner: centered text, and use of form-->
-    <section class="banner_waves container">
+    <section id="updates" class="banner_waves container">
         <article class="subscribe container_small">
             <h2 class="signup-text">Sign-up for <span>Updates</span></h2>
             <p class="signup-text">Stay updated on our latest product release, be first to find out about <br />upcoming
                 sales, and get free style tips from our blog. Unsubscribe at any time.</p>
 
             <form id="email" action="submit.php" method="get">
-                <input type="text" name="Your Email" size="12" maxlength="12" />
+                <input class="input" type="text" name="Your Email" size="12" maxlength="12" />
                 <button class="button" type="Submit">Subscribe</button>
             </form>
         </article>
@@ -92,7 +138,7 @@
     <footer class="alohafooter">
         <section class="footer-text-container">
             <div class="leftside-footer">
-                <p class="leftside-footer-copyright">2016 Aloha Apparel Co. <br />
+                <p class="leftside-footer-copyright"><i class="far fa-copyright"></i> 2019 Aloha Apparel Co. <br />
                     Powered by HTML and CSS. </p>
                     <p class="leftside-footer-contact">604-604-6040. <a href="#info.html">info@alohaapparel.com</a></p>
                     <p class="leftside-footer address">1490 W Broadway <br />
@@ -101,17 +147,18 @@
             </div>
 
             <ul class="social-media">
-                <li><a href="facebook.html"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                <li><a href="twitter.html"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="instagram.html"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="pinterest.html"><i class="fab fa-pinterest"></i> Pinterest</a></li>
-                <li><a href="google.html"><i class="fab fa-google-plus-g"></i> Google+</a></li>
+                <li><a href="facebook.html"><i class="fab fa-facebook-f icon"></i>  Facebook</a></li>
+                <li><a href="twitter.html"><i class="fab fa-twitter icon"></i>  Twitter</a></li>
+                <li><a href="instagram.html"><i class="fab fa-instagram icon"></i>  Instagram</a></li>
+                <li><a href="pinterest.html"><i class="fab fa-pinterest icon"></i>  Pinterest</a></li>
+                <li><a href="google.html"><i class="fab fa-google-plus-g icon"></i>  Google+</a></li>
             </ul>
         </section>
 
     </footer>
 
-
+<script type="text/javascript" src="script.js"></script>
+<script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
