@@ -41,10 +41,10 @@ section, header, footer {
 }
 
 .container_small {
-    max-width:750px;
     text-align:center;
     margin:40px auto;
     display: block;
+    width:25rem;
 }
 
 
@@ -52,13 +52,12 @@ section, header, footer {
                              Header 
 ------------------------------------------------------------**/
 .container_heading {
-    /* max-width:1240px; */
     text-align:center;
-    margin:0 auto;
+    margin:2rem 0.5rem;
     display: flex;
     justify-content:space-between;
     flex-direction:row;
-    width:83%;
+    width:100%;
     /* position:fixed; */
 }
 
@@ -175,7 +174,7 @@ a:hover {
     text-align: center;
     font-size:18px;
     font-weight:100;
-    line-height:30px;
+    line-height:40px;
 }
 
 .shopinfo h2{
@@ -209,7 +208,6 @@ a:hover {
     height:400px;
     padding-top:200px;
 }
-
 
 .mens {
     background-image: url(images/mens-category.jpg);
@@ -269,8 +267,14 @@ a:hover {
     margin:40px auto;
     display: block;
 }
-.scroll-products {
-    background-color:gray;
+
+.carousel-cell button {
+    color:white;
+    background-color: black;
+    border-radius:25px;
+    font-family:'Raleway', Arial, sans-serif;
+    padding:5px 10px;
+    margin:5px;
 }
 
 /* Typography for Featured */
@@ -286,23 +290,18 @@ a:hover {
 .featured-text-genre.featured-text-price {
     color:#969696;
     font-size:10px;
-    font-family:"Raleway", Arial, sans-serif;
+    font-family:'Raleway', Arial, sans-serif;
     font-weight:100;
 }
 
 .featured-text-name {
     color:#e2574c;
     font-size:20px;
-    font-family:"Playfair Display", Arial, serif;
+    font-family:'Playfair Display', Arial, serif;
 }
 
-.main-carousel {
-    display:flex;
-    align-content: center;
-    flex-direction: row;
-}
-.carousel-cell {
-    align-items: row;
+.carousel-cell img {
+    width:initial;
 }
 
 
@@ -338,10 +337,30 @@ a:hover {
 
 /*Button*/
 
+form {
+    display:flex;
+    flex-direction:row;
+}
+
+.input {
+    font-size:16px;
+    padding: 15px 30px;
+    border-radius: 20px 0px 0px 20px;
+    flex-grow:2;
+    border:none;
+}
+
+input:focus{
+    outline: none;
+  }
+
+#email {
+    padding:25px;
+}
+
 .button {
     background-color: #e2574c;
     color:white;
-    padding:10px 20px;
     font-family:'Raleway';
     font-size:18px;
     border-radius:25px;
@@ -350,17 +369,6 @@ a:hover {
 
 .button:hover {
     background-color:#b64036;
-}
-
-.input {
-    font-size:16px;
-    width:20%;
-    padding: 15px 10px;
-    border-radius: 20px 0px 0px 20px;
-}
-
-#email {
-    padding:25px;
 }
 
 /*------------------------------------------------------------------------
@@ -451,23 +459,44 @@ a:hover {
                              Media Queries 
 -------------------------------------------------------------------------*/
 
-/* Desktop */
-@media screen and (min-width:"1240px") {
-
-}
-
 /* Tablet */
-@media screen and (min-width:"600px") {
-    
+@media screen and (min-width:600px) {
+    .container_small {
+        width:550px;
+    }
+
+    .container_heading {
+        text-align:center;
+        /* margin:0 auto; */
+        display: flex;
+        justify-content:space-between;
+        flex-direction:row;
+        width:100%;
+        /* position:fixed; */
+    }
 }
+
+/* Desktop */
+@media screen and (min-width:1240px) {
+    .container_small {
+        width:650px;
+    }
+    .container_heading {
+        text-align:center;
+        margin:0 auto;
+        display: flex;
+        justify-content:space-between;
+        flex-direction:row;
+        width:83%;
+        /* position:fixed; */
+    }
+}
+
+
 
 
 /* makes all images responsive */
 
-img {
-    max-width:100%;
-    height:auto;
-}
 
 /* "height:auto" gives proper aspect ratio */
 
