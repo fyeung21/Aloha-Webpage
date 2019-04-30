@@ -16,29 +16,32 @@
 <body>
 
     <!--Header: logo, nav, cart-->
-    <header id="alohaheader" class="container_heading">
+    <header id="alohaheader" class="site_heading container">
+        <div class="logo">
+            <img src="images/aloha-logo.svg" alt="logo">
+        </div>
 
-        <img class="logo" src="images/aloha-logo.svg" alt="logo">
-        <nav>
-            <ul id="navigation">
-                <li><a href="#about">ABOUT </a></li>
-                <li><a href="#shop">SHOP </a></li>
-                <li><a href="#featured">FEATURED </a></li>
-                <li><a href="#updates">UPDATES </a></li>
-            </ul>
-        </nav>
-
-        <section class="container_cart">
+        <div class="container_cart">
             <img id="cart" class="cart" src="images/cart-icon.svg" alt="shopping-cart">
-            <p class="number">3</p>
-        </section>
+        </div>
+
+        
+            <nav>
+                <ul id="navigation">
+                    <li><a href="#about">ABOUT </a></li>
+                    <li><a href="#shop">SHOP </a></li>
+                    <li><a href="#featured">FEATURED </a></li>
+                    <li><a href="#updates">UPDATES </a></li>
+                </ul>
+            </nav>
+        
 
     </header>
 
     <!--Main Banner: flower-bkgd-->
     <section class="banner">
         <h1 class="container_small bannertext">NEW COLLECTION</h1>
-        <h2 class="container_small bannertext2">Spring/Summer 2016</h2>
+        <h2 class="bannertext2">Spring/Summer 2016</h2>
 
     </section>
 
@@ -52,14 +55,14 @@
 
 
     <!--Categories-->
-    <section id="shop" class="container">
+    <section id="shop">
         <ul class="categories_container">
-            <li class="categories mens"><a href="#mens">MEN'S</a></li>
-            <li class="categories trends"><a href="#trends">TRENDS</a></li>
-            <li class="categories glasses"><a href="#glassess">GLASSES</a></li>
-            <li class="categories sale"><a href="#sale">SALE</a></li>
-            <li class="categories bags"><a href="#bags">BAGS</a></li>
-            <li class="categories womens"><a href="#womens">WOMEN'S</a></li>
+            <li class="categories mens rectangle"><a href="#mens">MEN'S</a></li>
+            <li class="categories trends square"><a href="#trends">TRENDS</a></li>
+            <li class="categories glasses square"><a href="#glassess">GLASSES</a></li>
+            <li class="categories sale square"><a href="#sale">SALE</a></li>
+            <li class="categories bags square"><a href="#bags">BAGS</a></li>
+            <li class="categories womens rectangle"><a href="#womens">WOMEN'S</a></li>
         </ul>
 
     </section>
@@ -68,75 +71,84 @@
     <section id="featured" class="scroll-products container-featured">
         <h2>Most-Loved <span>Products</span></h2><br />
         <div class="main-carousel">
+
             <div class="carousel-cell">
                 <img id="stretch-knit-dress" src="images/stretch-knit-dress.jpg" alt="checked-stretch-dress">
                 <p class="featured-text-genre">DRESSES</p>
                 <p class="featured-text-name">Stretch Knit Dress</p>
-                <p class="feature-text-price">$169.00</p>
+                <p class="featured-text-price">$169.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
+
             <div class="carousel-cell">
                 <img id="cotton-blue-shirt" src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt">
                 <p class="featured-text-genre">SHIRTS</p>
                 <p class="featured-text-name">Cotton Blue Shirt</p>
-                <p class="feature-text-price">$89.00</p>
+                <p class="featured-text-price">$89.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
+
             <div class="carousel-cell">
                 <img id="checked-stretch-dress" src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
                 <p class="featured-text-genre">DRESSES</p>
                 <p class="featured-text-name">Checked Stretch Dress</p>
-                <p class="feature-text-price">$129.00</p>
+                <p class="featured-text-price">$129.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
+
             <div class="carousel-cell">
                 <img id="blue-hipster-backpack" src="images/blue-hipster-backpack.jpg" alt="blue-hipster-packpack">
                 <p class="featured-text-genre">BAGS</p>
                 <p class="featured-text-name">Blue Hipster Backpack</p>
-                <p class="feature-text-price">$69.00</p>
+                <p class="featured-text-price">$69.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
+
             <div class="carousel-cell">
                 <img id="checked-stretch-dress" src="images/demin-overall-shorts.jpg" alt="checked-stretch-dress">
                 <p class="featured-text-genre">DENIM</p>
                 <p class="featured-text-name">Denim Overall Shorts</p>
-                <p class="feature-text-price">$89.00</p>
+                <p class="featured-text-price">$89.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
+
             <div class="carousel-cell">
                 <img id="checked-stretch-dress" src="images/pink-dotted-dress.jpg" alt="checked-stretch-dress">
                 <p class="featured-text-genre">DRESSES</p>
                 <p class="featured-text-name">Pink Dotted Dress</p>
-                <p class="feature-text-price">$99.00</p>
+                <p class="featured-text-price">$99.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
+
             <div class="carousel-cell">
                 <img id="checked-stretch-dress" src="images/blue-silk-dress.jpg" alt="checked-stretch-dress">
                 <p class="featured-text-genre">DRESSES</p>
                 <p class="featured-text-name">Blue Silk Dress</p>
-                <p class="feature-text-price">$199.00</p>
+                <p class="featured-text-price">$199.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
+
             <div class="carousel-cell">
                 <img id="checked-stretch-dress" src="images/cotton-yellow-tshirt.jpg" alt="checked-stretch-dress">
                 <p class="featured-text-genre">SHIRTS</p>
                 <p class="featured-text-name">Cotton Yellow Tshirt</p>
-                <p class="feature-text-price">$39.00</p>
+                <p class="featured-text-price">$39.00</p>
                 <button class="add-to-cart" type="Submit">Add to Cart</button>
             </div>
         </div>
     </section>
 
     <!--Signup Banner: centered text, and use of form-->
-    <section id="updates" class="banner_waves container">
+    <section id="updates" class="banner_waves">
         <article class="subscribe container_small">
             <h2 class="signup-text">Sign-up for <span>Updates</span></h2>
-            <p class="signup-text">Stay updated on our latest product release, be first to find out about <br />upcoming
+            <p class="signup-text">Stay updated on our latest product release, be first to find out about upcoming
                 sales, and get free style tips from our blog. Unsubscribe at any time.</p>
 
             <form id="email" action="submit.php" method="get">
-                <input class="input" type="text" name="Your Email" size="12" maxlength="12" />
-                <button class="button" type="Submit">Subscribe</button>
+                <input class="input" type="text" name="Your Email" value placeholder="Your Email" size="40"
+                    maxlength="40" />
+                <button id="submit-button" class="button" type="Submit">Subscribe</button>
             </form>
         </article>
     </section>
@@ -155,11 +167,11 @@
             </div>
 
             <ul class="social-media">
-                <li><a href="facebook.html"><i class="fab fa-facebook-f icon"></i> Facebook</a></li>
-                <li><a href="twitter.html"><i class="fab fa-twitter icon"></i> Twitter</a></li>
-                <li><a href="instagram.html"><i class="fab fa-instagram icon"></i> Instagram</a></li>
-                <li><a href="pinterest.html"><i class="fab fa-pinterest icon"></i> Pinterest</a></li>
-                <li><a href="google.html"><i class="fab fa-google-plus-g icon"></i> Google+</a></li>
+                <li><a href="facebook.html"><i class="fab fa-facebook-f icon"></i> <span>Facebook</span></a></li>
+                <li><a href="twitter.html"><i class="fab fa-twitter icon"></i> <span>Twitter</span></a></li>
+                <li><a href="instagram.html"><i class="fab fa-instagram icon"></i> <span>Instagram</span></a></li>
+                <li><a href="pinterest.html"><i class="fab fa-pinterest icon"></i> <span>Pinterest</span></a></li>
+                <li><a href="google.html"><i class="fab fa-google-plus-g icon"></i> <span>Google+</span></a></li>
             </ul>
         </section>
 
