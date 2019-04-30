@@ -39,7 +39,7 @@ ul {
 .container {
     text-align:center;
     max-width: 1240px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -56,10 +56,11 @@ ul {
 /** ---------------------------------------------------------- 
                              Header 
 ------------------------------------------------------------**/
-.site_heading {
+
+.logo-cart-heading {
     text-align:center;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     flex-direction:row;
     width:100%;
@@ -69,20 +70,33 @@ ul {
 .logo {
     align-self: flex-start;
     flex-basis: 50%;
-    margin: 15px 0px;
+    margin: 10px 0px;
     text-align: left;
 }
 
 .logo img {
-    width: 160px;
+    width: 120px;
+}
+
+/* Cart */
+
+.container_cart {
+    flex-basis: 50%;
+    text-align:right;
+    margin:0;
+    position: relative;
+}
+
+.cart {
+    align-self:flex-end;
+    width: 60px;   
 }
 
 /* Navigation */
 
-
 nav ul {
-    border-top:solid;
-    border-top-color: #2d2d2d;
+    border-top:solid 1px;
+    border-top-color: #969696;
 }
 
 nav li{
@@ -93,7 +107,7 @@ nav li{
     font-size:16px;
     font-style: normal;
     text-align: center;
-    margin:40px 15px 20px;
+    margin:15px 15px 15px;
 }
 
 /* Navigation Link Behaviour */
@@ -111,18 +125,10 @@ a:hover {
     color: #b64036;
 }
 
-/* Cart */
+/* For media query */
 
-.container_cart {
-    flex-basis: 50%;
-    text-align:right;
-    margin:0;
-    position: relative;
-}
-
-.cart {
-    align-self:flex-end;
-    width: 60px;   
+.logo-nav-cart-order {
+    display:none;
 }
 
 /* --------------------------------------------------------------
@@ -477,29 +483,34 @@ ul li span {
     .container_small {
         width:550px;
     }
-
-    .container_heading {
-        text-align:center;
+    /* ------------------- Heading */
+    .logo-nav-cart-order {
+        align-items:center;
         margin:0 auto;
         display: flex;
         justify-content:space-between;
+        flex-wrap:nowrap;
         flex-direction:row;
-        width:100%;
-        /* position:fixed; */
+        width:95%;
     }
 
-    /* .logo {
-        order:1;
+    .logo-cart-heading {
+        display:none;
     }
 
-    nav li {
-        order:3;
+    .logo {
+        flex-basis:auto;
+    }
+    nav ul {
+        border:none;
+        align-items:center;
+    }
+    nav li{
+        margin:40px 15px 20px;
+        text-align:center;
     }
 
-    .cart {
-        align-self:flex-end;
-        order:3;
-    } */
+    /* --------------------- Main Banner */
 
     .banner {
         background-position: center 70px, center;
@@ -509,7 +520,30 @@ ul li span {
     .banner-text2 {
         line-height:0;
     }
-   
+
+    /* --------------------- Categories */
+
+    .rectangle {
+        flex-basis:41.5%;
+    }
+
+    .square {
+        flex-basis:20%;
+    }
+
+    /* --------------------- Flickity */
+
+    .carousel-cell {
+        width: 50%;
+    }
+
+    /* --------------------- Sign-Up */
+
+    .button {
+        width: 22%;
+    }
+
+    /* --------------------- Footer */
 
     .footer-text-container {
         display: flex;
@@ -529,40 +563,7 @@ ul li span {
     .leftside-footer-contact {
         text-align: left;
     }
-
-    .leftside-footer-copyright {
-        text-align: left;
-    }
-
-    .address {
-        text-align:left;
-    }
-
-    /* Categories */
-
-    .rectangle {
-        flex-basis:41.5%;
-    }
     
-    .square {
-        flex-basis:20%;
-    }
-
-
-    /* Flickity */
-
-    .carousel-cell {
-        width: 50%;
-    }
-
-    
-
-    .button {
-        width: 22%;
-    }
-
-    /* footer */
-
     .leftside-footer-copyright {
         color: white;
         text-align: left;
@@ -572,6 +573,10 @@ ul li span {
     ul li span {
         display:inline-block;
     }
+
+    .address {
+        text-align:left;
+    }
 }
 
 /* --------------------------------- Desktop ----------------------------- */
@@ -580,29 +585,36 @@ ul li span {
     .container_small {
         width:650px;
     }
-    .container_heading {
-        text-align:center;
+    /* -------------------------- Heading */
+    .logo-nav-cart-order {
+        align-items:center;
         margin:0 auto;
         display: flex;
         justify-content:space-between;
+        flex-wrap:wrap;
         flex-direction:row;
-        width:83%;
-        /* position:fixed; */
+        width:95%;
+    }
+
+    .logo-cart-heading {
+        display:none;
     }
 
     .logo {
-        order:0;
+        flex-basis:auto;
     }
 
-    nav li {
-        order:1;
+    nav ul {
+        border:none;
+        align-items:center;
+        margin:0 auto;
     }
 
-    .cart {
-        align-self:flex-end;
-        order:2;
+    nav li{
+        margin:40px 15px 20px;
+        text-align:center;
     }
-
+    /* ------------------------- Main Banner */
     .banner {
         background-position: center 70px, center;
         background-size:contain;
@@ -612,11 +624,29 @@ ul li span {
         line-height:0;
     }
 
-    /* Flickity */
+    /* ------------------------- Flickity */
     
     .carousel-cell {
         width: 25%;
     }
+
+    /* ------------------------- Categories */
+
+    .rectangle {
+        flex-basis:41.5%;   
+    }
+    
+    .square {
+        flex-basis:20%;
+    }
+
+    /* -------------------------- Sign-Up */
+
+    .button {
+        width: 22%;
+    }
+
+    /* -------------------------- Footer */
 
     .footer-text-container {
         display: flex;
@@ -638,32 +668,6 @@ ul li span {
     }
 
     .leftside-footer-copyright {
-        text-align: left;
-    }
-
-    .address {
-        text-align:left;
-    }
-
-    /* Categories */
-
-    .rectangle {
-        flex-basis:41.5%;   
-    }
-    
-    .square {
-        flex-basis:20%;
-    }
-
-    /* Sign-Up */
-
-    .button {
-        width: 22%;
-    }
-
-    /* Footer */
-
-    .leftside-footer-copyright {
         color: white;
         text-align: left;
         padding-top: 80px;
@@ -672,6 +676,10 @@ ul li span {
     ul li span {
         display:unset;
     }
+    .address {
+        text-align:left;
+    }
+    
 }
  
 

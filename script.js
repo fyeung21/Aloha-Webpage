@@ -30,6 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
     event ='Thanks For Subscribing!';
 
     alert(event);
+
+    // if () {
+    //     alert("Thanks For Subscribing!");
+    //     return:(true);
+    // }
+    // else {
+    //     alert("Please Enter a Valid Email Address.");
+    //     return:(false);
+    // }
     });
 
 });
