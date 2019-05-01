@@ -21,9 +21,15 @@ Simply clone the project and open index.html on any internet browser.
 
 ## Mobile View:
 
+<img width="200px" src="images/mobile-ver.png">
+
 ## Tablet View:
 
+<img width="200px" src="images/tablet-ver.png">
+
 ## Desktop View:
+
+<img width="200px" src="images/desktop-ver.png">
 
 # Personal Learning Developments
 ---

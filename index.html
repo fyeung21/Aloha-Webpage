@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <title>Aloha Apparel Co.</title>
 
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
             </div>
 
         </div>
-        
+
     </header>
 
     <!--Main Banner: flower-bkgd-->
@@ -77,12 +77,12 @@
     <!--Categories-->
     <section id="shop">
         <ul class="categories_container">
-            <li class="categories mens rectangle"><a href="#mens">MEN'S</a></li>
+            <li class="categories mens wide"><a href="#mens">MEN'S</a></li>
             <li class="categories trends square"><a href="#trends">TRENDS</a></li>
             <li class="categories glasses square"><a href="#glassess">GLASSES</a></li>
             <li class="categories sale square"><a href="#sale">SALE</a></li>
             <li class="categories bags square"><a href="#bags">BAGS</a></li>
-            <li class="categories womens rectangle"><a href="#womens">WOMEN'S</a></li>
+            <li class="categories womens wide"><a href="#womens">WOMEN'S</a></li>
         </ul>
 
     </section>
@@ -165,8 +165,8 @@
             <p class="signup-text">Stay updated on our latest product release, be first to find out about upcoming
                 sales, and get free style tips from our blog. Unsubscribe at any time.</p>
 
-            <form id="email" action="submit.php" method="get">
-                <input class="input" type="text" name="Your Email" value placeholder="Your Email" size="40"
+            <form id="email" method="get">
+                <input id="input" type="text" name="Your Email" value placeholder="Your Email" size="40"
                     maxlength="40" />
                 <button id="submit-button" class="button" type="Submit">Subscribe</button>
             </form>
@@ -197,7 +197,7 @@
 
     </footer>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
