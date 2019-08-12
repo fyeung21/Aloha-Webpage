@@ -17,6 +17,8 @@
 
     <!--Header: logo, nav, cart-->
     <header id="alohaheader" class="site-heading container">
+        <a class="screen-reader-text" href="#mens">Skip to content</a>
+
         <div class="logo-cart-heading">
 
             <div class="logo">
@@ -77,14 +79,13 @@
     <!--Categories-->
     <section id="shop">
         <ul class="categories_container">
-            <li class="categories mens wide"><a href="#mens">MEN'S</a></li>
-            <li class="categories trends square"><a href="#trends">TRENDS</a></li>
-            <li class="categories glasses square"><a href="#glassess">GLASSES</a></li>
-            <li class="categories sale square"><a href="#sale">SALE</a></li>
-            <li class="categories bags square"><a href="#bags">BAGS</a></li>
-            <li class="categories womens wide"><a href="#womens">WOMEN'S</a></li>
+            <li id="mens" class="categories mens"><a href="#mens">MEN'S</a></li>
+            <li class="categories trends"><a href="#trends">TRENDS</a></li>
+            <li class="categories glasses"><a href="#glassess">GLASSES</a></li>
+            <li class="categories sale"><a href="#sale">SALE</a></li>
+            <li class="categories bags"><a href="#bags">BAGS</a></li>
+            <li class="categories womens"><a href="#womens">WOMEN'S</a></li>
         </ul>
-
     </section>
 
     <!--Featured: scrolling products-->
@@ -197,6 +198,7 @@
 
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
