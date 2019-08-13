@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         autoPlay:5000
     });
 
-    const navLinks = document.querySelectorAll('#navigation li a');
+    const navLinks = document.querySelectorAll('.navigation li a');
     
     navLinks.forEach(function(link) {
         link.addEventListener("click", function(event){
