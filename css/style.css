@@ -79,56 +79,39 @@ ul {
 ------------------------------------------------------------**/
 
 .logo-cart-heading {
-  text-align: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
 
 .logo {
-  align-self: flex-start;
-  /* flex-basis: 50%; */
-  margin: 10px 0px;
-  text-align: left;
-}
-
-.logo img {
-  width: 120px;
-}
-
-/* Cart */
-
-.container_cart {
-  flex-basis: 50%;
-  text-align: right;
-  margin: 0;
-  position: relative;
+  height: 50px;
+  order: 1;
 }
 
 .cart {
-  align-self: flex-end;
-  width: 60px;
+  height: 55px;
+  order: 2;
+  padding-left: 60%;
 }
 
 /* Navigation */
 
-nav ul {
-  border-top: solid 1px;
-  border-top-color: #969696;
+nav {
+  border-top: 1px solid #969696;
+  margin-top: 5px;
+  width: 100%;
+  order: 3;
 }
 
-nav li {
+.navigation li {
   color: #b64036;
   display: inline-block;
   font-family: "Raleway", Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
-  font-style: normal;
-  text-align: center;
-  margin: 15px 15px 15px;
+  margin: 10px 15px;
 }
 
 /* Navigation Link Behaviour */
@@ -227,7 +210,8 @@ a:hover {
 }
 
 .mens {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), no-repeat center center/cover url(../images/mens-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    no-repeat center center/cover url(../images/mens-category.jpg);
   grid-column: span 2;
 }
 
@@ -242,11 +226,13 @@ a:hover {
 }
 
 .sale {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), no-repeat center center/cover url(../images/sale-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    no-repeat center center/cover url(../images/sale-category.jpg);
 }
 
 .bags {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), no-repeat center center/cover url(../images/bags-category.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    no-repeat center center/cover url(../images/bags-category.jpg);
 }
 
 .womens {
@@ -491,32 +477,34 @@ ul li span {
     width: 550px;
   }
   /* ------------------- Heading */
-  .logo-nav-cart-order {
-    align-items: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 95%;
-  }
 
+  .site-heading {
+    position: sticky;
+    top:0;
+    z-index:9999;
+    background-color:#fff;
+    width:100%;
+    padding:3px 7%;
+  }
   .logo-cart-heading {
-    display: none;
+    flex-wrap: nowrap;
+    margin: 0 10px;
+    justify-content: space-between;
   }
 
   .logo {
-    flex-basis: auto;
-  }
-  nav ul {
-    border: none;
-    align-items: center;
-  }
-  nav li {
-    margin: 40px 15px 20px;
-    text-align: center;
+    order: 1;
   }
 
+  .cart {
+    order: 3;
+    padding-left: 0;
+  }
+
+  nav {
+    border-top: none;
+    order: 2;
+  }
   /* --------------------- Main Banner */
 
   .banner {
@@ -593,35 +581,7 @@ ul li span {
   .container_small {
     width: 650px;
   }
-  /* -------------------------- Heading */
-  .logo-nav-cart-order {
-    align-items: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 95%;
-  }
 
-  .logo-cart-heading {
-    display: none;
-  }
-
-  .logo {
-    flex-basis: auto;
-  }
-
-  nav ul {
-    border: none;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  nav li {
-    margin: 40px 15px 20px;
-    text-align: center;
-  }
   /* ------------------------- Main Banner */
   .banner {
     background-position: center 70px, center;
