@@ -32,6 +32,7 @@
             </nav>
 
             <img class="cart" src="images/cart-icon.svg" alt="shopping-cart">
+            <p id="counter">0</p>
         </div>
 
     </header>
@@ -40,11 +41,10 @@
     <section class="banner">
         <h1 class="container_small bannertext">NEW COLLECTION</h1>
         <h2 class="bannertext2">Spring/Summer 2016</h2>
-
     </section>
 
     <!--About: centered text-->
-    <section class="shopinfo container_small">
+    <section id="about" class="shopinfo container_small">
         <h2>Hand-Crafted <span>Styles</span></h2>
         <p>Aloha Apparel Co. sells only the finest ready to travel clothing. Browse our current
             selection of products
@@ -53,7 +53,7 @@
 
 
     <!--Categories-->
-    <section>
+    <section id="shop">
         <ul class="categories_container">
             <li id="mens" class="categories mens"><a href="#mens">MEN'S</a></li>
             <li class="categories trends"><a href="#trends">TRENDS</a></li>
@@ -65,7 +65,7 @@
     </section>
 
     <!--Featured: scrolling products-->
-    <section class="scroll-products container-featured">
+    <section id="featured" class="scroll-products container-featured">
         <h2>Most-Loved <span>Products</span></h2><br />
         <div class="main-carousel">
 
@@ -136,15 +136,15 @@
     </section>
 
     <!--Signup Banner: centered text, and use of form-->
-    <section class="banner_waves">
+    <section id="updates" class="banner_waves">
         <article class="subscribe container_small">
             <h2 class="signup-text">Sign-up for <span>Updates</span></h2>
             <p class="signup-text">Stay updated on our latest product release, be first to find out about upcoming
                 sales, and get free style tips from our blog. Unsubscribe at any time.</p>
 
             <form class="email" method="get">
-                <input id="input" type="text" name="Your Email" value placeholder="Your Email" size="40"
-                    maxlength="40" />
+                <input id="input" type="text" name="Your Email" value placeholder="Your Email" size="30"
+                    maxlength="30" />
                 <button id="submit-button" class="button" type="Submit">Subscribe</button>
             </form>
         </article>

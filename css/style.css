@@ -96,6 +96,17 @@ ul {
   padding-left: 60%;
 }
 
+#counter {
+  order: 2;
+  position: relative;
+  background-color: red;
+  color: white;
+  width: 30px;
+  height: 25px;
+  border-radius: 50%;
+  right: 15px;
+}
+
 /* Navigation */
 
 nav {
@@ -297,7 +308,6 @@ a:hover {
 .banner_waves {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), no-repeat url(../images/wave-bkgd.jpg);
   background-position: bottom center;
-  background-repeat: no-repeat;
   padding: 5px 0px 10px;
   margin-bottom: 8px;
 }
@@ -483,6 +493,10 @@ ul li span {
   .cart {
     order: 3;
     padding-left: 0;
+  }
+
+  #counter {
+    order: 3;
   }
 
   nav {

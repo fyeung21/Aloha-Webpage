@@ -11,6 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
         autoPlay:5000
     });
 
+    const addCart = document.querySelectorAll('.carousel-cell button');
+    let number = 0;
+    addCart.forEach(function(add) {
+        add.addEventListener('click', function(){
+            number++;
+            document.getElementById('counter').innerHTML = number;
+        })
+    })
+
+
     const navLinks = document.querySelectorAll('.navigation li a');
     
     navLinks.forEach(function(link) {
