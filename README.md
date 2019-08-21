@@ -13,8 +13,8 @@ Simply clone the project and open index.html on any internet browser.
 * CSS3
 * JavaScript
 * Flickity
+* Transfonter
 * Font Awesome
-* Git
 
 # Screenshots
 ---
@@ -40,11 +40,8 @@ Simply clone the project and open index.html on any internet browser.
 
 * Use of a JavaScript plugin, Flickity, made enabling scrolling effects in featured section easier.
 
-* Use of Font Awesome to generate font css from font assets contributed to applying custom fonts to the webpage.
+* Use of Transfonter to generate font css from font assets contributed to applying custom fonts to the webpage.
+
+* Use of Font Awesome to apply social media icons.
 
 * Learning to use Git to upload commits enabled better recording of project's progress.
-
-
-# License
----
-This project is licensed under MIT.
